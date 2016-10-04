@@ -1,0 +1,109 @@
+* {
+  /* Include margin and padding to the entire width*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-size: 0; /* Clear trailing whitespace between divs */
+  font-family: futura, arial, helvetica, "San-Serif", "Times New Roman";
+  background: url('./bg.jpg');
+}
+h1 {
+  font-size: 40px;
+  font-family: arial, helvetica, "San-Serif", "Times New Roman";
+  color: #000000; /* hex value of black*/
+}
+h2 {
+  font-size: 20px;
+}
+p, table {
+  font-size: 14px;
+  color: #3c3c3c; /* hex value of dark grey*/
+}
+a {
+  /* Override default styling*/
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  /* Override default styling*/
+  border-width: 80%;
+  color: #000000;
+  border-bottom: solid 1px #c5c5c5;
+  text-decoration: none;
+}
+hr{
+  border: none;
+  width: 70%;
+  height: 3px;
+  /* Set the hr color */
+  color: black; /* old IE */
+  background-color: black; /* Modern Browsers */
+}
+button{
+  margin: 5px;
+}
+
+.visible{
+  visibility: hidden;
+}
+
+.sogreen{
+  color: green;
+}
+
+
+
+.my-container {
+  margin: 30px auto;
+  padding: 10px;
+  max-width: 964px;
+  background-color: #000000;
+}
+
+.content {
+  text-align: center;
+  /*margin: 20px;*/
+  border-top: solid 20px #000000;
+  padding: 30px 100px;
+  background-color: #f4f4f2;
+}
+.info {
+  display: inline-block;
+  width: 50%;
+  padding: 0 15px;
+}
+.column {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 15px;
+}
+.row {
+  text-align: left;
+  padding: 0 10px;
+}
+.row p {
+  font-style: italic;
+}
+.row strong{
+  font-size: 120%;
+  color: #000000;
+}
+.row img {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+.small {
+  font-size: 80%;
+  color: #9e9e9e;
+}
+.left-border {
+  /* Set this class to indent with a left border */
+  margin-left: 3px;
+  padding-left: 9px;
+  border-left: solid 2px #9e9e9e;
+}
