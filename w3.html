@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Meet Gordan Ramsay</title>
+  <!-- css files: bootstrap.css, mystyle.css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <!-- js files: fontawesome, jquery3, bootstrap.js -->
+  <script src="https://use.fontawesome.com/0ec8b3e8ac.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container my-container">
+    <div class="col-md-12 content">
+      <h1 style="text-align:center;">Gordan Ramsay</h1>
+      <h2 style="text-align:center;">The Best Chef Ever </h2>
+      <hr/>
+      <div class="info" style="text-align:right;">
+        <p>your.email@gmail.com</p>
+        <p>+852 6580 7777</p>
+      </div>
+      <div class="info" style="text-align:left;">
+        <p>311 Hang Seng Hall, CUHK</p>
+        <p><a href="http://www.learnlayout.com/position.html">myhomepage.github.io</a></p>
+      </div>
+    </div>
+    <!-- This is where We'll be working on today-->'
+    <div class="col-md-12 content">
+      <button id="toggle" type="button" class="btn btn-success btn-lg"> toggle view </button>
+      <button id="color"type="button" class="btn btn-info btn-lg"> toggle color </button>
+      <button id="zoomIn"type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+      </button>
+      <button id="zoomOut"type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-zoom-out" aria-hidden="true"></span>
+      </button>
+      <div><h3 id="showbtn">Hello World</h3></div>
+    </div>
+
+
+
+
+    <script>
+      //We will work here today
+
+
+
+
+
+      $(document).ready(function(){
+        $("#toggle").click(function(){
+          $( ".row > p" ).slideToggle( "500" );
+          $("#toggle").toggleClass("active")
+        });
+
+      });
+
+      var counter = 0;
+      var colors = [
+        "green",
+        "red",
+        "blue",
+        "black"
+      ];
+
+      $("#color").click(function(){
+        $("#showbtn").html("you pressed color");
+        $(".row > p, #color").css({
+            "color": colors[(counter++)%colors.length]
+        })
+      });  
+
+    </script>
+
+
+
+    <!-- End of section -->
+    <div class="col-md-12 content">
+      <div class="col-md-6">
+        <div class="row">
+          <h2 id="test">PROFILE</h2>
+          <p>
+            A dedicated professional with 3+ years experience in kitchen management. Specializes in maximizing site profits through employee
+            retention and efficient inventory control. Now seeking to contribute my experience, skills and expertise to the
+            management team at Coffee Corner.
+          </p>
+        </div>
+        <div class="row">
+          <h2>EDUCATION</h2>
+          <p class="left-border">
+            <strong>Bachelor of Engineering<br/>Computer Science</strong>
+            <br/>
+            <br/>The Chinese University of Hong Kong
+            <br/><span class="small">2014 - present</span>
+          </p>
+          <p>Make sure the education section of your resume is relevant to the job you are applying for.</p>
+        </div>
+        <div class="row">
+          <h2>SKILLS</h2>
+          <p>
+            Highly skilled in cooking and preparing a variety of cuisines/Exceptional ability to develop a well tuned pallet/Inborn ability
+            to explore new cooking avenues/Particularly effective in overseeing staff in order to ensure quality and quantity
+          </p>
+        </div>
+        <div class="row">
+          <h2>INTERESTS</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td class="col-md-2"><i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i></td>
+                <td class="col-md-2"><i class="fa fa-ship fa-4x" aria-hidden="true"></i></td>
+                <td class="col-md-2"><i class="fa fa-laptop fa-4x" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-futbol-o fa-4x" aria-hidden="true"></i></td>
+                <td><i class="fa fa-book fa-4x" aria-hidden="true"></i></td>
+                <td><button type="button" class="btn btn-primary">Primary</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <img src="pro-pic.jpg" />
+        </div>
+        <div class="row">
+          <h2>PROFESSIONAL EXPERIENCE</h2>
+          <p>
+            <strong>Head Chef</strong>
+            <br/> / United College Canteen
+            <br/><span class="small">December 2015 - June 2016</span>
+          </p>
+          <p>
+            Take orders and serve food and beverages to patrons at tables in dining establishment. Check with customers to ensure that
+            they are enjoying their meals and take action to correct any problems.
+          </p>
+          <p>
+            <strong>Chef</strong>
+            <br/> / Lee Woo Sing College Canteen
+            <br/><span class="small">July 2015 - November 2015</span>
+          </p>
+          <p>
+            Take orders and serve food and beverages to patrons at tables in dining establishment. Check with customers to ensure that
+            they are enjoying their meals and take action to correct any problems.
+          </p>
+          <p>
+            <strong>Waiter</strong>
+            <br/> / Chung Chi College Staff Canteen
+            <br/><span class="small">September 2014 - January 2015</span>
+          </p>
+          <p>
+            Take orders and serve food and beverages to patrons at tables in dining establishment.
+          </p>
+          <p class="left-border">
+            <a href="http://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements">
+              Trailing Whitespace Problem??</a>
+            <br/>
+            <a href="https://99designs.hk/blog/inside-99designs/99designs-introduces-email-design-category/">
+              Checkout some free templates for styled email.
+            </a>
+            <br/>
+            <a href="http://getbootstrap.com/">
+              getBootstrap.com&nbsp;
+            </a>
+            <a href="http://v4-alpha.getbootstrap.com/components/buttons/">
+              Bs Button&nbsp;
+            </a>
+            <a href="http://v4-alpha.getbootstrap.com/components/modal/">
+              Bs Modal&nbsp;
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
